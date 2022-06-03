@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;800;900&display=swap');
+
+header{
+    width: 100%;
+    height: 16vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+header section{
+    display: none;
+}
+
+h1{
+    margin-left: 4vw;
+    font-size: 40px;
+    font-weight: 700;
+    width: 20%;
+}
+
+header nav{
+    width: 40%;
+    margin-right: 2vw;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+}
+
+header li{
+    font-size: 1.25em;
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+header li:hover{
+    font-size: 1.6em;
+    font-weight: bolder;
+    cursor: pointer;
+    opacity: 1;
+}
+
+main{
+    width: 100%;
+}
+
+.laranja{
+    width: 100%;
+    margin-top: 16vh;
+}
+
+.laranjaMobile{
+    display: none;
+}
+
+main h2{
+    font-size: 4vw;
+    font-weight: 800;
+    color: #ffffff;
+    position: absolute;
+    top: 50vh;
+    left: 6vw;
+}
+
+main button{
+    width: 15vw;
+    height: 6vh;
+    font-size: 25px;
+    font-weight: 300;
+    color: #ffffff;
+    position: relative;
+    bottom: 30vh;
+    left: 6vw;
+    background: transparent;
+    border: none;
+    opacity: 0.6;
+}
+
+main button:hover{
+    cursor: pointer;
+}
+
+.container_main--photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container_main--photos img{
+    width: 298px;
+    height: auto;
+    margin: 0.5vw;
+    transition: 1s all;
+}
+
+.container_main--photos img:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    background-color: #edede9;
+    margin-top: 8vh;
+}
+
+.container_footer--photos{
+    width: 28%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 3vw;
+}
+
+.container_footer--prh{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+}
+
+footer h2{
+    width: 16.8%;
+}
+
+.prh{
+    width: 60%;
+}
+
+.ancora{
+    display: none;
+}
+
+@media (max-width:800px) {
+
+    header{
+        width: 100%;
+        height: 4.5vh;
+    }
+    
+    nav{
+        display: none;
+    }
+
+    h1{
+        font-size: 20px;
+        font-weight: 700;
+        width: 60%;
+    }
+
+    .hamburger-lines {
+        width: 30%;
+        height: 4.5vh;
+        display: flex;
+        background-color: black;
+    }
+
+    div {
+        width: 6vw;
+        height: 3vh;
+        position: absolute;
+        top: 4.5px;
+        left: 12vw;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    span {
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: white;
+    }
+
+    .laranja{
+        display: none;
+    }
+
+    .laranjaMobile{
+        display: block;
+        width: 100%;
+    }
+
+    main h2{
+        font-size: 13vw;
+        font-weight: 900;
+        position: absolute;
+        top: 56vh;
+        left: 11vw;
+    }
+
+    main button{
+        width: 50vw;
+        height: 4.5vh;
+        font-size: 19px;
+        font-weight: 300;
+        color: #ffffff;
+        position: relative;
+        bottom: 6.7vh;
+        left: 6vw;
+        background: transparent;
+        border: none;
+        opacity: 0.6;
+    }
+
+    .container_main--photos{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container_main--photos img{
+        width: 80%;
+        margin-top: 5vh;
+    }
+
+    footer{
+        width: 80%;
+        height: 35vh;
+        display: inline-block;
+        margin-top: 3vh;
+        position: relative;
+        top: 3vh;
+        left: 10vw;
+    }
+
+    .container_footer--photos{
+        width: 100%;
+        height: 41px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #7fdbd4;
+    }
+
+    .container_footer--photos img{
+        width: 25px;
+        height: 25px;
+    }
+
+    footer h2{
+        width: 50%;
+        font-size: 5vw;
+        font-weight: 800;
+        margin-top: 2vh;
+    }
+
+    .prh{
+        width: 50%;
+        font-size: 4.2vw;
+        font-weight: 300;
+        opacity: 0.6;
+        overflow: hidden;
+    }
+
+    .ancora{
+        display: inline-block;
+        background-color: #333333;
+        width: 18vw;
+        height: 4vh;
+        position: relative;
+        bottom: 13vh;
+        left: 61vw;
+    }
+
+    a{
+        padding: 15px;
+        color: #ffffff;
+    }
+
+}
+  
